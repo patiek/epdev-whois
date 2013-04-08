@@ -22,7 +22,7 @@ if (!defined('E_DEPRECATED')) {
 
 // set error reporting level (ignore deprecated for ereg)
 // @TODO: transition ereg use to preg
-error_reporting(E_ALL ^ E_NOTICE ^ E_DEPRECATED);
+error_reporting(E_ALL & ~(E_NOTICE | E_DEPRECATED));
 		
 ini_set("memory_limit", "128M");
 

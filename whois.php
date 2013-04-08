@@ -56,7 +56,7 @@ class EP_Dev_Whois
 		
 		// set error reporting level (ignore deprecated for ereg)
 		// @TODO: transition ereg use to preg
-		error_reporting(E_ALL ^ E_NOTICE ^ E_DEPRECATED);
+		error_reporting(E_ALL & ~(E_NOTICE | E_DEPRECATED));
 
 		// absolute path
 		$this->absolute_path = "";
