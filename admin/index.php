@@ -15,8 +15,15 @@
 // --------------------------------------------
 
 
-// set error reporting level
-error_reporting(E_ALL ^ E_NOTICE);
+// deprecated introduced in PHP 5.3
+if (!defined('E_DEPRECATED')) {
+	define('E_DEPRECATED', 8192);
+}
+
+// set error reporting level (ignore deprecated for ereg)
+// @TODO: transition ereg use to preg
+error_reporting(E_ALL ^ E_NOTICE ^ E_DEPRECATED);
+		
 ini_set("memory_limit", "128M");
 
 // +------------------------------
