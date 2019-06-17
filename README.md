@@ -4,7 +4,7 @@ EP-Dev Whois
 ===========
 
 EP-Dev Whois is a whois php script that has a multitude of features. 
-It  will act an an ordinary whois script, returning whois information  
+It  will act as an ordinary whois script, returning whois information  
 natively on about 200 different extensions with the ability to easily 
 add more. It will also act as a whois script for registrars who plan to 
 pass available domains into a billing system for a customer to order. 
